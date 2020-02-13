@@ -1,0 +1,11 @@
+python3-mysqldb
+mysql -u root -p
+CREATE USER 'master'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON botnet.* TO 'master'@'localhost';
+create database botnet;
+
+pip3 install maxminddb
+# https://dev.maxmind.com/geoip/geoip2/geolite2/
+# http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz
+
+
